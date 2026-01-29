@@ -36,7 +36,7 @@ const CATEGORY_KEYWORDS: Record<string, { keywords: string[]; nameKo: string }> 
     keywords: ['공기청정기', '헤파 공기청정기'],
     nameKo: '공기청정기',
   },
-  'bluetooth-earphone': {
+  'earbuds': {
     keywords: ['블루투스 이어폰', '무선 이어폰 노이즈캔슬링'],
     nameKo: '블루투스 이어폰',
   },
@@ -143,7 +143,7 @@ function generateTags(product: NaverProduct, category: string): string[] {
   if (name.includes('미니') || name.includes('소형')) tags.push('compact')
 
   // 카테고리별 태그
-  if (category === 'bluetooth-earphone') {
+  if (category === 'earbuds') {
     if (name.includes('노이즈캔슬링') || name.includes('anc')) tags.push('anc')
     if (name.includes('오픈형')) tags.push('open_type')
   }
@@ -225,7 +225,14 @@ async function saveToSupabase(products: ProcessedProduct[]): Promise<void> {
   const supabase = createClient(SUPABASE_URL, SUPABASE_SERVICE_KEY)
 
   // 카테고리 ID 가져오기
-  const { data: categories } = await supabase.from('categories').select('id, slug')
+  const { data: categories, error: catError } = await supabase.from('categories').select('id, slug')
+
+  if (catError) {
+    console.log(`Error fetching categories: ${catError.message}`)
+    return
+  }
+
+  console.log(`Found categories: ${categories?.map(c => c.slug).join(', ') || 'none'}`)
   const categoryMap = new Map(categories?.map(c => [c.slug, c.id]) || [])
 
   // 기존 상품 비활성화
@@ -234,9 +241,14 @@ async function saveToSupabase(products: ProcessedProduct[]): Promise<void> {
   console.log('\nImporting to Supabase...')
 
   let imported = 0
+  let errors: string[] = []
+
   for (const product of products) {
     const categoryId = categoryMap.get(product.category)
-    if (!categoryId) continue
+    if (!categoryId) {
+      errors.push(`Category not found: ${product.category}`)
+      continue
+    }
 
     const { error } = await supabase.from('products').insert({
       category_id: categoryId,
@@ -245,15 +257,24 @@ async function saveToSupabase(products: ProcessedProduct[]): Promise<void> {
       price: product.price,
       image_url: product.imageUrl,
       naver_url: product.naverUrl,
-      coupang_url: product.coupangSearchUrl, // 일단 검색 URL로 저장
+      coupang_url: product.coupangSearchUrl,
       tags: product.tags,
       is_active: true,
     } as any)
 
-    if (!error) imported++
+    if (error) {
+      errors.push(`${product.name}: ${error.message}`)
+    } else {
+      imported++
+    }
   }
 
   console.log(`Imported ${imported} products to Supabase`)
+  if (errors.length > 0) {
+    console.log(`\nErrors (${errors.length}):`)
+    errors.slice(0, 5).forEach(e => console.log(`  - ${e}`))
+    if (errors.length > 5) console.log(`  ... and ${errors.length - 5} more`)
+  }
 }
 
 function saveToFiles(products: ProcessedProduct[]): void {
