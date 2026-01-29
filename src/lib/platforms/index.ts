@@ -13,5 +13,6 @@ export {
 
 export {
   searchMultiPlatform,
+  comparePrices,
   type MultiPlatformProduct,
 } from './multiplatform'

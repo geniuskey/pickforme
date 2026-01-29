@@ -68,25 +68,25 @@ export async function getPriceHistory(
   }
 
   // Calculate stats
-  const prices = data.map((d) => d.price)
+  const prices = data.map((d: any) => d.price as number)
   const current = prices[prices.length - 1]
   const lowest = Math.min(...prices)
   const highest = Math.max(...prices)
-  const average = Math.round(prices.reduce((a, b) => a + b, 0) / prices.length)
+  const average = Math.round(prices.reduce((a: number, b: number) => a + b, 0) / prices.length)
 
   // Determine trend (compare last 7 days average to previous 7 days)
   let trend: 'up' | 'down' | 'stable' = 'stable'
   if (data.length >= 14) {
     const recent = data.slice(-7)
     const previous = data.slice(-14, -7)
-    const recentAvg = recent.reduce((a, b) => a + b.price, 0) / recent.length
-    const previousAvg = previous.reduce((a, b) => a + b.price, 0) / previous.length
+    const recentAvg = recent.reduce((a: number, b: any) => a + b.price, 0) / recent.length
+    const previousAvg = previous.reduce((a: number, b: any) => a + b.price, 0) / previous.length
 
     if (recentAvg > previousAvg * 1.05) trend = 'up'
     else if (recentAvg < previousAvg * 0.95) trend = 'down'
   }
 
-  const lowestRecord = data.find((d) => d.price === lowest)
+  const lowestRecord = data.find((d: any) => d.price === lowest)
 
   return {
     current,
@@ -95,7 +95,7 @@ export async function getPriceHistory(
     average,
     trend,
     lowestDate: new Date(lowestRecord!.recorded_at),
-    history: data.map((d) => ({
+    history: data.map((d: any) => ({
       date: new Date(d.recorded_at).toISOString().split('T')[0],
       price: d.price,
     })),

@@ -84,7 +84,7 @@ export async function POST(request: NextRequest) {
       answers,
       result_type_id: resultType.id,
       completed: true,
-    })
+    } as any)
 
     const response: ResultResponse = {
       result_type: {

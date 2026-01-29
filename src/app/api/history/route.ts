@@ -32,7 +32,7 @@ export async function POST(request: NextRequest) {
         category_id,
         result_type_id,
         result_image_url,
-      })
+      } as any)
       .select()
       .single()
 
