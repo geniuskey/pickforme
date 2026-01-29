@@ -1,5 +1,414 @@
 [
   {
+    "name": "스테나 STN 100 그레이",
+    "brand": "스테나",
+    "price": 398000,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_5515213/55152131810.20260106123601.jpg",
+    "naverUrl": "https://search.shopping.naver.com/catalog/55152131810",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EC%8A%A4%ED%85%8C%EB%82%98%20STN%20100%20%EA%B7%B8%EB%A0%88%EC%9D%B4",
+    "mallName": "네이버",
+    "category": "humidifier",
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "name": "스텐팟 6L 대용량 스텐 가열식 가습기 올스텐 신생아 아기 가습기 화이트",
+    "brand": "스텐팟",
+    "price": 349000,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_8475965/84759655602.9.jpg",
+    "naverUrl": "https://smartstore.naver.com/main/products/7215155280",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EC%8A%A4%ED%85%90%ED%8C%9F%206L%20%EB%8C%80%EC%9A%A9%EB%9F%89%20%EC%8A%A4%ED%85%90%20%EA%B0%80%EC%97%B4%EC%8B%9D",
+    "mallName": "스텐팟",
+    "category": "humidifier",
+    "tags": [
+      "luxury",
+      "large_capacity"
+    ]
+  },
+  {
+    "name": "조지루시 가열식 가습기 대용량 4L 아기 신생아 220V",
+    "brand": "조지루시",
+    "price": 329000,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_8680059/86800596005.13.jpg",
+    "naverUrl": "https://smartstore.naver.com/main/products/9256095682",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EC%A1%B0%EC%A7%80%EB%A3%A8%EC%8B%9C%20%EA%B0%80%EC%97%B4%EC%8B%9D%20%EA%B0%80%EC%8A%B5%EA%B8%B0%20%EB%8C%80%EC%9A%A9%EB%9F%89%204L",
+    "mallName": "귀뚜라미 판매몰",
+    "category": "humidifier",
+    "tags": [
+      "luxury",
+      "large_capacity"
+    ]
+  },
+  {
+    "name": "케어팟 가습기 X50V 화이트",
+    "brand": "케어팟",
+    "price": 269000,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_5337409/53374097884.20250909111723.jpg",
+    "naverUrl": "https://search.shopping.naver.com/catalog/53374097884",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EC%BC%80%EC%96%B4%ED%8C%9F%20%EA%B0%80%EC%8A%B5%EA%B8%B0%20X50V%20%ED%99%94%EC%9D%B4%ED%8A%B8",
+    "mallName": "네이버",
+    "category": "humidifier",
+    "tags": [
+      "premium"
+    ]
+  },
+  {
+    "name": "블루필 블랙크리스탈 가열식 가습기 대용량 올스텐 IH 온열 인덕션 신생아 아기 밥솥",
+    "brand": "블루필",
+    "price": 245000,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_8687275/86872753509.7.jpg",
+    "naverUrl": "https://smartstore.naver.com/main/products/9328253186",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EB%B8%94%EB%A3%A8%ED%95%84%20%EB%B8%94%EB%9E%99%ED%81%AC%EB%A6%AC%EC%8A%A4%ED%83%88%20%EA%B0%80%EC%97%B4%EC%8B%9D%20%EA%B0%80%EC%8A%B5%EA%B8%B0%20%EB%8C%80%EC%9A%A9%EB%9F%89",
+    "mallName": "블루필 공식스토어",
+    "category": "humidifier",
+    "tags": [
+      "premium",
+      "large_capacity"
+    ]
+  },
+  {
+    "name": "신일 25L 대용량 초음파 가습기 사무실 대형 거실 통세척 무소음 타워형 업소용 산업용",
+    "brand": "신일전자",
+    "price": 239000,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_8712371/87123711760.1.jpg",
+    "naverUrl": "https://smartstore.naver.com/main/products/9579209490",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EC%8B%A0%EC%9D%BC%2025L%20%EB%8C%80%EC%9A%A9%EB%9F%89%20%EC%B4%88%EC%9D%8C%ED%8C%8C%20%EA%B0%80%EC%8A%B5%EA%B8%B0",
+    "mallName": "서경디지털",
+    "category": "humidifier",
+    "tags": [
+      "premium",
+      "quiet",
+      "large_capacity"
+    ]
+  },
+  {
+    "name": "신일 대용량 가습기 초음파 통세척 사무실 거실 세척편한 대형 25L",
+    "brand": "신일전자",
+    "price": 239000,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_8262832/82628328392.5.jpg",
+    "naverUrl": "https://smartstore.naver.com/main/products/5083806694",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EC%8B%A0%EC%9D%BC%20%EB%8C%80%EC%9A%A9%EB%9F%89%20%EA%B0%80%EC%8A%B5%EA%B8%B0%20%EC%B4%88%EC%9D%8C%ED%8C%8C%20%ED%86%B5%EC%84%B8%EC%B2%99",
+    "mallName": "신일 파트너스. 미니멀리빙",
+    "category": "humidifier",
+    "tags": [
+      "premium",
+      "large_capacity"
+    ]
+  },
+  {
+    "name": "한일 프리미엄 가열식 가습기 신생아 아기 가습기 최신형 물멍 대용량 저소음 살균 화이트",
+    "brand": "한일",
+    "price": 199000,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_8993486/89934868838.3.jpg",
+    "naverUrl": "https://smartstore.naver.com/main/products/12390358113",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%ED%95%9C%EC%9D%BC%20%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84%20%EA%B0%80%EC%97%B4%EC%8B%9D%20%EA%B0%80%EC%8A%B5%EA%B8%B0%20%EC%8B%A0%EC%83%9D%EC%95%84",
+    "mallName": "한일 온라인스토어",
+    "category": "humidifier",
+    "tags": [
+      "premium",
+      "quiet",
+      "large_capacity"
+    ]
+  },
+  {
+    "name": "에디르 대용량 복합식 가습기 프로 화이트",
+    "brand": "에디르",
+    "price": 198000,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_5734295/57342953301.20251024092903.jpg",
+    "naverUrl": "https://search.shopping.naver.com/catalog/57342953301",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EC%97%90%EB%94%94%EB%A5%B4%20%EB%8C%80%EC%9A%A9%EB%9F%89%20%EB%B3%B5%ED%95%A9%EC%8B%9D%20%EA%B0%80%EC%8A%B5%EA%B8%B0%20%ED%94%84%EB%A1%9C",
+    "mallName": "네이버",
+    "category": "humidifier",
+    "tags": [
+      "premium",
+      "large_capacity"
+    ]
+  },
+  {
+    "name": "[무압력]한일 26년형 가열식 가습기 대용량 신생아 가열가습기 아기",
+    "brand": "한일",
+    "price": 184900,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_8857793/88577937395.17.jpg",
+    "naverUrl": "https://smartstore.naver.com/main/products/11033431188",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%ED%95%9C%EC%9D%BC%2026%EB%85%84%ED%98%95%20%EA%B0%80%EC%97%B4%EC%8B%9D%20%EA%B0%80%EC%8A%B5%EA%B8%B0%20%EB%8C%80%EC%9A%A9%EB%9F%89",
+    "mallName": "한일공식몰",
+    "category": "humidifier",
+    "tags": [
+      "premium",
+      "large_capacity"
+    ]
+  },
+  {
+    "name": "오넬리 듀얼 스팀 에어프라이어 오븐형 올스텐 대용량 에어프라이기 로티세리 자동세척 20L",
+    "brand": "ONELEE",
+    "price": 399000,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_8551028/85510286941.13.jpg",
+    "naverUrl": "https://smartstore.naver.com/main/products/7965786618",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EC%98%A4%EB%84%AC%EB%A6%AC%20%EB%93%80%EC%96%BC%20%EC%8A%A4%ED%8C%80%20%EC%97%90%EC%96%B4%ED%94%84%EB%9D%BC%EC%9D%B4%EC%96%B4%20%EC%98%A4%EB%B8%90%ED%98%95",
+    "mallName": "오넬리 스토어",
+    "category": "air-fryer",
+    "tags": [
+      "luxury",
+      "large_capacity"
+    ]
+  },
+  {
+    "name": "스테나 퓨어 304 스텐",
+    "brand": "스테나",
+    "price": 297860,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_5218930/52189304624.20241230144753.jpg",
+    "naverUrl": "https://search.shopping.naver.com/catalog/52189304624",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EC%8A%A4%ED%85%8C%EB%82%98%20%ED%93%A8%EC%96%B4%20304%20%EC%8A%A4%ED%85%90",
+    "mallName": "네이버",
+    "category": "air-fryer",
+    "tags": [
+      "premium"
+    ]
+  },
+  {
+    "name": "시즌앤홈 대용량 올스텐 에어프라이어 오븐형 30L",
+    "brand": "",
+    "price": 247900,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_8401670/84016701308.20.jpg",
+    "naverUrl": "https://smartstore.naver.com/main/products/6472200975",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EC%8B%9C%EC%A6%8C%EC%95%A4%ED%99%88%20%EB%8C%80%EC%9A%A9%EB%9F%89%20%EC%98%AC%EC%8A%A4%ED%85%90%20%EC%97%90%EC%96%B4%ED%94%84%EB%9D%BC%EC%9D%B4%EC%96%B4%20%EC%98%A4%EB%B8%90%ED%98%95",
+    "mallName": "시즌앤홈",
+    "category": "air-fryer",
+    "tags": [
+      "premium",
+      "large_capacity"
+    ]
+  },
+  {
+    "name": "KAN DAROOM 올스텐 에어프라이어 23L 화이트",
+    "brand": "DAROOM",
+    "price": 236550,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_5823007/58230071954.20260115171713.jpg",
+    "naverUrl": "https://search.shopping.naver.com/catalog/58230071954",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=KAN%20DAROOM%20%EC%98%AC%EC%8A%A4%ED%85%90%20%EC%97%90%EC%96%B4%ED%94%84%EB%9D%BC%EC%9D%B4%EC%96%B4%2023L",
+    "mallName": "네이버",
+    "category": "air-fryer",
+    "tags": [
+      "premium"
+    ]
+  },
+  {
+    "name": "라쿠진 LCZ2506WT 화이트",
+    "brand": "라쿠진",
+    "price": 199000,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_5225145/52251457620.20251216153623.jpg",
+    "naverUrl": "https://search.shopping.naver.com/catalog/52251457620",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EB%9D%BC%EC%BF%A0%EC%A7%84%20LCZ2506WT%20%ED%99%94%EC%9D%B4%ED%8A%B8",
+    "mallName": "네이버",
+    "category": "air-fryer",
+    "tags": [
+      "premium"
+    ]
+  },
+  {
+    "name": "코렐 일렉 크리스피 바사칸 에어글라스 에어프라이어 5세대",
+    "brand": "코렐",
+    "price": 189000,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_9046022/90460224260.jpg",
+    "naverUrl": "https://smartstore.naver.com/main/products/12915713268",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EC%BD%94%EB%A0%90%20%EC%9D%BC%EB%A0%89%20%ED%81%AC%EB%A6%AC%EC%8A%A4%ED%94%BC%20%EB%B0%94%EC%82%AC%EC%B9%B8%20%EC%97%90%EC%96%B4%EA%B8%80%EB%9D%BC%EC%8A%A4",
+    "mallName": "온라인 정품 스토어",
+    "category": "air-fryer",
+    "tags": [
+      "premium"
+    ]
+  },
+  {
+    "name": "박세리 오븐 에어프라이어 오븐형 대용량 올스텐 에어후라이기 포미",
+    "brand": "",
+    "price": 174000,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_8235525/82355258091.19.jpg",
+    "naverUrl": "https://smartstore.naver.com/main/products/4810735425",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EB%B0%95%EC%84%B8%EB%A6%AC%20%EC%98%A4%EB%B8%90%20%EC%97%90%EC%96%B4%ED%94%84%EB%9D%BC%EC%9D%B4%EC%96%B4%20%EC%98%A4%EB%B8%90%ED%98%95%20%EB%8C%80%EC%9A%A9%EB%9F%89",
+    "mallName": "쇼핑포미",
+    "category": "air-fryer",
+    "tags": [
+      "premium",
+      "large_capacity"
+    ]
+  },
+  {
+    "name": "쿠쿠전자 CUCKOO CAFO-A1410TB 블랙",
+    "brand": "CUCKOO",
+    "price": 140100,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_5219181/52191810622.20241230174240.jpg",
+    "naverUrl": "https://search.shopping.naver.com/catalog/52191810622",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EC%BF%A0%EC%BF%A0%EC%A0%84%EC%9E%90%20CUCKOO%20CAFO%20A1410TB%20%EB%B8%94%EB%9E%99",
+    "mallName": "네이버",
+    "category": "air-fryer",
+    "tags": [
+      "mid_range"
+    ]
+  },
+  {
+    "name": "오아 보아르 에이블 듀얼 에어프라이어 실버",
+    "brand": "보아르",
+    "price": 129000,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_5364564/53645644370.20251021151913.jpg",
+    "naverUrl": "https://search.shopping.naver.com/catalog/53645644370",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EC%98%A4%EC%95%84%20%EB%B3%B4%EC%95%84%EB%A5%B4%20%EC%97%90%EC%9D%B4%EB%B8%94%20%EB%93%80%EC%96%BC%20%EC%97%90%EC%96%B4%ED%94%84%EB%9D%BC%EC%9D%B4%EC%96%B4",
+    "mallName": "네이버",
+    "category": "air-fryer",
+    "tags": [
+      "mid_range"
+    ]
+  },
+  {
+    "name": "스텐 스팀 에어프라이어 오븐형 에어프라이 대용량 에어후라이기",
+    "brand": "",
+    "price": 129000,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_4089281/40892813299.10.jpg",
+    "naverUrl": "https://syhong1108.cafe24.com/product/detail.html?product_no=15&cate_no=108&display_group=1&cafe_mkt=naver_ks&mkt_in=Y&ghost_mall_id=naver&ref=naver_open",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EC%8A%A4%ED%85%90%20%EC%8A%A4%ED%8C%80%20%EC%97%90%EC%96%B4%ED%94%84%EB%9D%BC%EC%9D%B4%EC%96%B4%20%EC%98%A4%EB%B8%90%ED%98%95%20%EC%97%90%EC%96%B4%ED%94%84%EB%9D%BC%EC%9D%B4",
+    "mallName": "ginamall",
+    "category": "air-fryer",
+    "tags": [
+      "mid_range",
+      "large_capacity"
+    ]
+  },
+  {
+    "name": "LG전자 LG퓨리케어 AI+ 360˚ 공기청정기 AS355N M 필터, 샌드 베이지, +무빙휠",
+    "brand": "LG퓨리케어",
+    "price": 1374890,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_5387577/53875779430.20250331173601.jpg",
+    "naverUrl": "https://search.shopping.naver.com/catalog/53875779430",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=LG%EC%A0%84%EC%9E%90%20LG%ED%93%A8%EB%A6%AC%EC%BC%80%EC%96%B4%20AI%20360%20%EA%B3%B5%EA%B8%B0%EC%B2%AD%EC%A0%95%EA%B8%B0",
+    "mallName": "네이버",
+    "category": "air-purifier",
+    "tags": [
+      "luxury",
+      "lg"
+    ]
+  },
+  {
+    "name": "다이슨 쿨 공기청정기 PC2 화이트골드",
+    "brand": "다이슨",
+    "price": 591090,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_5392056/53920562242.20250410172644.jpg",
+    "naverUrl": "https://search.shopping.naver.com/catalog/53920562242",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EB%8B%A4%EC%9D%B4%EC%8A%A8%20%EC%BF%A8%20%EA%B3%B5%EA%B8%B0%EC%B2%AD%EC%A0%95%EA%B8%B0%20PC2%20%ED%99%94%EC%9D%B4%ED%8A%B8%EA%B3%A8%EB%93%9C",
+    "mallName": "네이버",
+    "category": "air-purifier",
+    "tags": [
+      "luxury",
+      "dyson"
+    ]
+  },
+  {
+    "name": "쿠쿠전자 CUCKOO AC-28AHNL20F 어스 웜화이트",
+    "brand": "CUCKOO",
+    "price": 494900,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_5350664/53506640419.20251211095206.jpg",
+    "naverUrl": "https://search.shopping.naver.com/catalog/53506640419",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EC%BF%A0%EC%BF%A0%EC%A0%84%EC%9E%90%20CUCKOO%20AC%2028AHNL20F%20%EC%96%B4%EC%8A%A4",
+    "mallName": "네이버",
+    "category": "air-purifier",
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "name": "하니웰 펫 공기청정기 고양이 털 냄새 알레르기 제거 HEPA필터 가정용 음이온 소형 공청기",
+    "brand": "하니웰",
+    "price": 489000,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_8907839/89078399004.jpg",
+    "naverUrl": "https://smartstore.naver.com/main/products/11533888598",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%ED%95%98%EB%8B%88%EC%9B%B0%20%ED%8E%AB%20%EA%B3%B5%EA%B8%B0%EC%B2%AD%EC%A0%95%EA%B8%B0%20%EA%B3%A0%EC%96%91%EC%9D%B4%20%ED%84%B8",
+    "mallName": "하니웰 공기청정기",
+    "category": "air-purifier",
+    "tags": [
+      "luxury",
+      "compact"
+    ]
+  },
+  {
+    "name": "위닉스 타워 프라임 플러스 ATTM115 실버",
+    "brand": "위닉스",
+    "price": 75580,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_5392044/53920444493.20250618095043.jpg",
+    "naverUrl": "https://search.shopping.naver.com/catalog/53920444493",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EC%9C%84%EB%8B%89%EC%8A%A4%20%ED%83%80%EC%9B%8C%20%ED%94%84%EB%9D%BC%EC%9E%84%20%ED%94%8C%EB%9F%AC%EC%8A%A4%20ATTM115",
+    "mallName": "네이버",
+    "category": "air-purifier",
+    "tags": [
+      "mid_range"
+    ]
+  },
+  {
+    "name": "위닉스 타워엣지 AT8E430 화이트",
+    "brand": "위닉스",
+    "price": 65000,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_5355057/53550578218.20250314172116.jpg",
+    "naverUrl": "https://search.shopping.naver.com/catalog/53550578218",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EC%9C%84%EB%8B%89%EC%8A%A4%20%ED%83%80%EC%9B%8C%EC%97%A3%EC%A7%80%20AT8E430%20%ED%99%94%EC%9D%B4%ED%8A%B8",
+    "mallName": "네이버",
+    "category": "air-purifier",
+    "tags": [
+      "mid_range"
+    ]
+  },
+  {
+    "name": "[호환] 필터모아 암웨이 공기청정기 필터 10-1076K 헤파 탈취 필터세트",
+    "brand": "필터모아",
+    "price": 52500,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_8274633/82746335959.14.jpg",
+    "naverUrl": "https://smartstore.naver.com/main/products/5201814330",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%ED%95%84%ED%84%B0%EB%AA%A8%EC%95%84%20%EC%95%94%EC%9B%A8%EC%9D%B4%20%EA%B3%B5%EA%B8%B0%EC%B2%AD%EC%A0%95%EA%B8%B0%20%ED%95%84%ED%84%B0%2010",
+    "mallName": "필터모아FM",
+    "category": "air-purifier",
+    "tags": [
+      "mid_range"
+    ]
+  },
+  {
+    "name": "홈스미스 미니공기청정기 원룸 소형 펫 고양이 강아지털 사무실 거실 안방 환기청정기 A1",
+    "brand": "홈스미스",
+    "price": 48900,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_8288498/82884981106.24.jpg",
+    "naverUrl": "https://smartstore.naver.com/main/products/5340488276",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%ED%99%88%EC%8A%A4%EB%AF%B8%EC%8A%A4%20%EB%AF%B8%EB%8B%88%EA%B3%B5%EA%B8%B0%EC%B2%AD%EC%A0%95%EA%B8%B0%20%EC%9B%90%EB%A3%B8%20%EC%86%8C%ED%98%95%20%ED%8E%AB",
+    "mallName": "홈스미스",
+    "category": "air-purifier",
+    "tags": [
+      "budget",
+      "compact"
+    ]
+  },
+  {
+    "name": "위닉스 AT5M200-MWK 화이트",
+    "brand": "위닉스",
+    "price": 40810,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_5351005/53510053085.20250312171450.jpg",
+    "naverUrl": "https://search.shopping.naver.com/catalog/53510053085",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EC%9C%84%EB%8B%89%EC%8A%A4%20AT5M200%20MWK%20%ED%99%94%EC%9D%B4%ED%8A%B8",
+    "mallName": "네이버",
+    "category": "air-purifier",
+    "tags": [
+      "budget"
+    ]
+  },
+  {
+    "name": "오아 퓨어 미니 공기청정기 OA-AP005 화이트",
+    "brand": "오아",
+    "price": 34800,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_5352778/53527787027.20250313103222.jpg",
+    "naverUrl": "https://search.shopping.naver.com/catalog/53527787027",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EC%98%A4%EC%95%84%20%ED%93%A8%EC%96%B4%20%EB%AF%B8%EB%8B%88%20%EA%B3%B5%EA%B8%B0%EC%B2%AD%EC%A0%95%EA%B8%B0%20OA",
+    "mallName": "네이버",
+    "category": "air-purifier",
+    "tags": [
+      "budget",
+      "compact"
+    ]
+  },
+  {
     "name": "브리츠 오픈형 블루투스 이어폰 귀찌 귀걸이형 운동 러닝 무선 이어폰 노이즈 캔슬링",
     "brand": "브리츠",
     "price": 49900,
@@ -131,6 +540,138 @@
     "tags": [
       "budget",
       "anc"
+    ]
+  },
+  {
+    "name": "드리미 X50s Pro Master 블랙, 단품",
+    "brand": "드리미",
+    "price": 1307690,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_5549794/55497943327.20250626101002.jpg",
+    "naverUrl": "https://search.shopping.naver.com/catalog/55497943327",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EB%93%9C%EB%A6%AC%EB%AF%B8%20X50s%20Pro%20Master%20%EB%B8%94%EB%9E%99",
+    "mallName": "네이버",
+    "category": "robot-vacuum",
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "name": "로보락 Qrevo Curv 2 Flow 화이트, 단품",
+    "brand": "로보락",
+    "price": 1190000,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_5848538/58485384625.20260113094740.jpg",
+    "naverUrl": "https://search.shopping.naver.com/catalog/58485384625",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EB%A1%9C%EB%B3%B4%EB%9D%BD%20Qrevo%20Curv%202%20Flow",
+    "mallName": "네이버",
+    "category": "robot-vacuum",
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "name": "삼성비스포크 스팀물걸레 AI 로봇청소기 + 스팀청정스테이션",
+    "brand": "삼성",
+    "price": 1184000,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_8843200/88432007063.jpg",
+    "naverUrl": "https://smartstore.naver.com/main/products/10887501045",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EC%82%BC%EC%84%B1%EB%B9%84%EC%8A%A4%ED%8F%AC%ED%81%AC%20%EC%8A%A4%ED%8C%80%EB%AC%BC%EA%B1%B8%EB%A0%88%20AI%20%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0%20%EC%8A%A4%ED%8C%80%EC%B2%AD%EC%A0%95%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%85%98",
+    "mallName": "나이루드",
+    "category": "robot-vacuum",
+    "tags": [
+      "luxury",
+      "samsung",
+      "mop"
+    ]
+  },
+  {
+    "name": "드리미 X50s Pro Ultra 화이트, 단품",
+    "brand": "드리미",
+    "price": 989990,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_5485788/54857880934.20250519140500.jpg",
+    "naverUrl": "https://search.shopping.naver.com/catalog/54857880934",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EB%93%9C%EB%A6%AC%EB%AF%B8%20X50s%20Pro%20Ultra%20%ED%99%94%EC%9D%B4%ED%8A%B8",
+    "mallName": "네이버",
+    "category": "robot-vacuum",
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "name": "삼성전자 BESPOKE 스팀 9600 로봇청소기 방문설치",
+    "brand": "",
+    "price": 897620,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_5528740/55287408519.52.jpg",
+    "naverUrl": "https://link.coupang.com/re/PCSNAVERPCSDP?pageKey=9977858988&ctag=9977858988&lptag=l292251820802&itemId=21282829005&vendorItemId=89258830163&spec=10305197",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90%20BESPOKE%20%EC%8A%A4%ED%8C%80%209600%20%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0",
+    "mallName": "쿠팡",
+    "category": "robot-vacuum",
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "name": "에브리봇 Q11 화이트, 단품",
+    "brand": "에브리봇",
+    "price": 849000,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_5744961/57449616455.20260123091551.jpg",
+    "naverUrl": "https://search.shopping.naver.com/catalog/57449616455",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EC%97%90%EB%B8%8C%EB%A6%AC%EB%B4%87%20Q11%20%ED%99%94%EC%9D%B4%ED%8A%B8%20%EB%8B%A8%ED%92%88",
+    "mallName": "네이버",
+    "category": "robot-vacuum",
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "name": "에코백스 디봇 T80 옴니 화이트, 단품",
+    "brand": "에코백스",
+    "price": 799000,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_5507678/55076784706.20250602104104.jpg",
+    "naverUrl": "https://search.shopping.naver.com/catalog/55076784706",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EC%97%90%EC%BD%94%EB%B0%B1%EC%8A%A4%20%EB%94%94%EB%B4%87%20T80%20%EC%98%B4%EB%8B%88%20%ED%99%94%EC%9D%B4%ED%8A%B8",
+    "mallName": "네이버",
+    "category": "robot-vacuum",
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "name": "[2026신제품] 드리미 L10s Ultra Gen3 로봇청소기 사이드 브러시 엉킴 방지 열풍건조",
+    "brand": "드리미",
+    "price": 699000,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_9034192/90341929558.3.jpg",
+    "naverUrl": "https://smartstore.naver.com/main/products/12797418609",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EB%93%9C%EB%A6%AC%EB%AF%B8%20L10s%20Ultra%20Gen3%20%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0",
+    "mallName": "드리미 한국 공식 대리점",
+    "category": "robot-vacuum",
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "name": "에브리봇 올인원 로봇청소기 Q9 화이트, 단품",
+    "brand": "에브리봇",
+    "price": 659000,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_5402479/54024790735.20250914214026.jpg",
+    "naverUrl": "https://search.shopping.naver.com/catalog/54024790735",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=%EC%97%90%EB%B8%8C%EB%A6%AC%EB%B4%87%20%EC%98%AC%EC%9D%B8%EC%9B%90%20%EB%A1%9C%EB%B4%87%EC%B2%AD%EC%86%8C%EA%B8%B0%20Q9%20%ED%99%94%EC%9D%B4%ED%8A%B8",
+    "mallName": "네이버",
+    "category": "robot-vacuum",
+    "tags": [
+      "luxury"
+    ]
+  },
+  {
+    "name": "TAMA 올인원 Ai 화이트, 단품",
+    "brand": "TAMA",
+    "price": 597990,
+    "imageUrl": "https://shopping-phinf.pstatic.net/main_5436877/54368770805.20250423165152.jpg",
+    "naverUrl": "https://search.shopping.naver.com/catalog/54368770805",
+    "coupangSearchUrl": "https://www.coupang.com/np/search?q=TAMA%20%EC%98%AC%EC%9D%B8%EC%9B%90%20Ai%20%ED%99%94%EC%9D%B4%ED%8A%B8%20%EB%8B%A8%ED%92%88",
+    "mallName": "네이버",
+    "category": "robot-vacuum",
+    "tags": [
+      "luxury"
     ]
   }
 ]
