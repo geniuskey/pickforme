@@ -16,3 +16,14 @@ export {
   comparePrices,
   type MultiPlatformProduct,
 } from './multiplatform'
+
+export {
+  searchCoupangProducts,
+  getCoupangGoldBoxProducts,
+  createCoupangDeepLink,
+  createCoupangDeepLinks,
+  getCoupangProductsForCategory,
+  type CoupangProduct,
+  type CoupangProductInfo,
+  type CoupangDeepLink,
+} from './coupang'

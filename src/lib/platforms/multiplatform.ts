@@ -2,6 +2,7 @@
 
 import { searchNaverProducts, NaverProductInfo } from './naver'
 import { searchElevenstProducts, ElevenstProductInfo } from './elevenst'
+import { searchCoupangProducts, CoupangProduct } from './coupang'
 
 export interface MultiPlatformProduct {
   name: string
@@ -31,13 +32,26 @@ export async function searchMultiPlatform(
   query: string
 ): Promise<MultiPlatformProduct[]> {
   // Search all platforms in parallel
-  const [naverResults, elevenstResults] = await Promise.all([
+  const [naverResults, elevenstResults, coupangResults] = await Promise.all([
     searchNaverProducts(query, { display: 10 }),
     searchElevenstProducts(query, { pageSize: 10 }),
+    searchCoupangProducts(query, { limit: 10 }),
   ])
 
   // Combine results (simplified - in production, would need smarter matching)
   const productMap = new Map<string, MultiPlatformProduct>()
+
+  // Process Coupang results first (primary platform)
+  for (const product of coupangResults) {
+    const key = normalizeProductName(product.productName)
+    productMap.set(key, {
+      name: product.productName,
+      prices: { coupang: product.productPrice },
+      urls: { coupang: product.productUrl },
+      lowestPrice: product.productPrice,
+      lowestPlatform: 'coupang',
+    })
+  }
 
   // Process Naver results
   for (const product of naverResults) {
