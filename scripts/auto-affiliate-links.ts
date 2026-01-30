@@ -180,37 +180,94 @@ async function generateAffiliateLink(page: Page, productName: string): Promise<s
 }
 
 async function manualLinkGeneration(page: Page, products: Product[]): Promise<void> {
-  console.log('\n📋 반자동 모드: 각 상품을 검색하고 링크를 직접 복사하세요\n')
+  console.log('\n' + '='.repeat(60))
+  console.log('📋 반자동 모드')
+  console.log('='.repeat(60))
+  console.log('\n사용 방법:')
+  console.log('1. 브라우저에서 쿠팡 파트너스 "링크 생성" 페이지가 열립니다')
+  console.log('2. 상품을 직접 검색하세요 (브랜드명 + 모델명 추천)')
+  console.log('3. 링크 생성 후, 생성된 URL을 복사하세요')
+  console.log('4. 터미널에 붙여넣고 Enter')
+  console.log('5. 다음 상품으로 넘어갑니다\n')
+
+  // 링크 생성 페이지로 이동
+  await page.goto(`${COUPANG_PARTNERS_URL}`, { waitUntil: 'domcontentloaded' })
+  await delay(2000)
+
+  let saved = 0
+  let skipped = 0
 
   for (let i = 0; i < products.length; i++) {
     const product = products[i]
-    console.log(`\n[${i + 1}/${products.length}] ${product.name.slice(0, 40)}...`)
+    const progress = `[${i + 1}/${products.length}]`
 
-    // 쿠팡 파트너스 검색 페이지로 이동
-    const searchQuery = encodeURIComponent(product.name.slice(0, 30))
-    await page.goto(`${COUPANG_PARTNERS_URL}/link-generation?keyword=${searchQuery}`, {
-      waitUntil: 'domcontentloaded',
-    })
+    console.log('\n' + '-'.repeat(60))
+    console.log(`${progress} 상품 정보:`)
+    console.log(`   📦 ${product.name}`)
+    console.log(`   💰 ${product.price?.toLocaleString()}원`)
 
-    // 사용자 입력 대기
-    const answer = await prompt('   어필리에이트 링크를 붙여넣으세요 (Enter=건너뛰기, q=종료): ')
+    // 검색 힌트 (브랜드 + 핵심 단어)
+    const searchHint = extractSearchKeywords(product.name)
+    console.log(`   🔍 검색 힌트: ${searchHint}`)
+
+    const answer = await prompt('\n   어필리에이트 링크 붙여넣기 (Enter=스킵, q=종료): ')
 
     if (answer.toLowerCase() === 'q') {
       console.log('\n작업 종료')
       break
     }
 
-    if (answer && (answer.includes('link.coupang.com') || answer.includes('coupa.ng'))) {
+    if (answer && (answer.includes('link.coupang.com') || answer.includes('coupa.ng') || answer.includes('coupang.com'))) {
       const success = await updateProductUrl(product.id, answer.trim())
       if (success) {
-        console.log('   ✅ 저장 완료')
+        console.log('   ✅ 저장 완료!')
+        saved++
       } else {
         console.log('   ❌ 저장 실패')
       }
     } else {
       console.log('   ⏭️ 건너뜀')
+      skipped++
     }
   }
+
+  console.log('\n' + '='.repeat(60))
+  console.log(`완료! ✅ 저장: ${saved}개, ⏭️ 스킵: ${skipped}개`)
+  console.log('='.repeat(60))
+}
+
+// 검색용 키워드 추출 (브랜드 + 핵심 단어)
+function extractSearchKeywords(name: string): string {
+  // 브랜드명 추출 시도
+  const brands = [
+    '삼성', 'LG', '샤오미', '다이슨', '필립스', '소니', '애플', '보스',
+    '에코백스', '로보락', '드리미', '위닉스', '쿠쿠', '발뮤다', '신일',
+    'QCY', '브리츠', '젠하이저', '에어팟', '갤럭시', '라쿠진', '스테나'
+  ]
+
+  let brand = ''
+  for (const b of brands) {
+    if (name.includes(b)) {
+      brand = b
+      break
+    }
+  }
+
+  // 모델명/핵심 키워드 추출 (영문+숫자 조합)
+  const modelMatch = name.match(/[A-Za-z0-9]+-?[A-Za-z0-9]+/g)
+  const model = modelMatch ? modelMatch[0] : ''
+
+  // 제품 카테고리 키워드
+  const categories = ['가습기', '에어프라이어', '공기청정기', '이어폰', '로봇청소기', '청소기']
+  let category = ''
+  for (const c of categories) {
+    if (name.includes(c)) {
+      category = c
+      break
+    }
+  }
+
+  return [brand, model, category].filter(Boolean).join(' ') || name.slice(0, 20)
 }
 
 async function autoLinkGeneration(page: Page, products: Product[]): Promise<void> {
@@ -299,12 +356,8 @@ async function main(): Promise<void> {
 
     await delay(1000)
 
-    // 링크 생성
-    if (isManual) {
-      await manualLinkGeneration(page, products)
-    } else {
-      await autoLinkGeneration(page, products)
-    }
+    // 링크 생성 (반자동 모드가 기본)
+    await manualLinkGeneration(page, products)
 
   } catch (error) {
     console.error('Error:', error)

@@ -13,10 +13,7 @@
     "scrape:category": "npx tsx scripts/scrape-coupang.ts --category",
     "import:products": "npx tsx scripts/import-products.ts",
     "fetch:naver": "npx tsx scripts/fetch-products-naver.ts",
-    "affiliate:export": "npx tsx scripts/generate-affiliate-links.ts export",
-    "affiliate:import": "npx tsx scripts/generate-affiliate-links.ts import",
-    "affiliate:auto": "npx tsx scripts/auto-affiliate-links.ts",
-    "affiliate:manual": "npx tsx scripts/auto-affiliate-links.ts --manual"
+    "affiliate": "npx tsx scripts/auto-affiliate-links.ts"
   },
   "dependencies": {
     "@google/generative-ai": "^0.21.0",
