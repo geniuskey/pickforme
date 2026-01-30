@@ -109,8 +109,8 @@ export default function ResultPage({ params }: Props) {
           >
             다시 테스트하기
           </button>
-          <p className="text-xs text-gray-400">
-            이 페이지의 링크를 통해 구매 시 일정 수수료를 받을 수 있습니다.
+          <p className="text-xs text-gray-400 max-w-md mx-auto">
+            이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.
           </p>
         </div>
       </div>
