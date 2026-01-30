@@ -44,6 +44,26 @@ const CATEGORY_KEYWORDS: Record<string, { keywords: string[]; nameKo: string }> 
     keywords: ['로봇청소기', '물걸레 로봇청소기'],
     nameKo: '로봇청소기',
   },
+  'smart-watch': {
+    keywords: ['스마트워치', '애플워치', '갤럭시워치'],
+    nameKo: '스마트워치',
+  },
+  'coffee-machine': {
+    keywords: ['커피머신', '에스프레소 머신', '전자동 커피머신'],
+    nameKo: '커피머신',
+  },
+  'monitor': {
+    keywords: ['컴퓨터 모니터', '게이밍 모니터', '4K 모니터'],
+    nameKo: '모니터',
+  },
+  'keyboard': {
+    keywords: ['기계식 키보드', '무선 키보드', '게이밍 키보드'],
+    nameKo: '키보드',
+  },
+  'speaker': {
+    keywords: ['블루투스 스피커', '휴대용 스피커', 'JBL 스피커'],
+    nameKo: '블루투스 스피커',
+  },
 }
 
 interface NaverProduct {
