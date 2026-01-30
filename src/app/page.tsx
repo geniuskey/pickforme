@@ -21,15 +21,43 @@ async function getCategories() {
   return data || []
 }
 
+async function getStats() {
+  const supabase = await createServerSupabaseClient()
+
+  // 카테고리 수
+  const { count: categoryCount } = await supabase
+    .from('categories')
+    .select('*', { count: 'exact', head: true })
+    .eq('is_active', true)
+
+  // 상품 수
+  const { count: productCount } = await supabase
+    .from('products')
+    .select('*', { count: 'exact', head: true })
+    .eq('is_active', true)
+
+  // 테스트 완료 수
+  const { count: testCount } = await supabase
+    .from('test_sessions')
+    .select('*', { count: 'exact', head: true })
+    .eq('completed', true)
+
+  return {
+    categories: categoryCount || 0,
+    products: productCount || 0,
+    tests: testCount || 0,
+  }
+}
+
 export const revalidate = 3600 // ISR: 1시간마다 재생성
 
 export default async function HomePage() {
-  const categories = await getCategories()
+  const [categories, stats] = await Promise.all([getCategories(), getStats()])
   const popularCategories = categories.slice(0, 3)
 
   return (
     <div className="gradient-bg min-h-screen">
-      <HeroSection />
+      <HeroSection stats={stats} />
 
       <section className="container mx-auto px-4 py-12">
         <Suspense fallback={<LoadingSpinner />}>

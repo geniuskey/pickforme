@@ -2,7 +2,17 @@
 
 import { motion } from 'framer-motion'
 
-export function HeroSection() {
+interface Stats {
+  categories: number
+  products: number
+  tests: number
+}
+
+interface HeroSectionProps {
+  stats: Stats
+}
+
+export function HeroSection({ stats }: HeroSectionProps) {
   return (
     <section className="relative overflow-hidden py-20 md:py-32">
       {/* Background decoration */}
@@ -72,15 +82,15 @@ export function HeroSection() {
           transition={{ duration: 0.6, delay: 0.5 }}
         >
           <div>
-            <div className="text-3xl font-bold text-primary-600">5+</div>
+            <div className="text-3xl font-bold text-primary-600">{stats.categories}</div>
             <div className="text-sm text-gray-500">카테고리</div>
           </div>
           <div>
-            <div className="text-3xl font-bold text-primary-600">100+</div>
+            <div className="text-3xl font-bold text-primary-600">{stats.products}</div>
             <div className="text-sm text-gray-500">추천 제품</div>
           </div>
           <div>
-            <div className="text-3xl font-bold text-primary-600">1만+</div>
+            <div className="text-3xl font-bold text-primary-600">{stats.tests.toLocaleString()}</div>
             <div className="text-sm text-gray-500">테스트 완료</div>
           </div>
         </motion.div>
