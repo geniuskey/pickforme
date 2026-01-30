@@ -50,6 +50,7 @@ export function ProductList({ products }: ProductListProps) {
                     width={80}
                     height={80}
                     className="w-full h-full object-cover"
+                    loading={index < 3 ? 'eager' : 'lazy'}
                     unoptimized
                   />
                 ) : (

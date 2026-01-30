@@ -61,9 +61,19 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
+        {/* DNS Prefetch */}
+        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://shopping-phinf.pstatic.net" />
+
+        {/* Preconnect */}
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
+
+        {/* Font */}
         <link
           rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.min.css"
+          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.min.css"
+          crossOrigin="anonymous"
         />
       </head>
       <body className="min-h-screen flex flex-col">
