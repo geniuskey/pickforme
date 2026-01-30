@@ -7,18 +7,40 @@ import { createServerSupabaseClient } from '@/lib/supabase/server'
 
 async function getCategories() {
   const supabase = await createServerSupabaseClient()
-  const { data, error } = await supabase
+
+  // 카테고리 가져오기
+  const { data: categories, error } = await supabase
     .from('categories')
-    .select('id, slug, name_ko, name_en, icon, view_count, description')
+    .select('id, slug, name_ko, name_en, icon, description')
     .eq('is_active', true)
-    .order('view_count', { ascending: false })
 
   if (error) {
     console.error('Error fetching categories:', error)
     return []
   }
 
-  return data || []
+  if (!categories || categories.length === 0) {
+    return []
+  }
+
+  // 각 카테고리별 실제 테스트 완료 수 가져오기
+  const categoriesWithCounts = await Promise.all(
+    categories.map(async (category) => {
+      const { count } = await supabase
+        .from('test_sessions')
+        .select('*', { count: 'exact', head: true })
+        .eq('category_id', category.id)
+        .eq('completed', true)
+
+      return {
+        ...category,
+        view_count: count || 0,
+      }
+    })
+  )
+
+  // 참여 수 기준 정렬
+  return categoriesWithCounts.sort((a, b) => b.view_count - a.view_count)
 }
 
 async function getStats() {
