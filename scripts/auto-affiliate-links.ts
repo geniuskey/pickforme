@@ -81,18 +81,23 @@ async function updateProductUrl(productId: string, affiliateUrl: string): Promis
 async function waitForLogin(page: Page): Promise<boolean> {
   console.log('\n🔐 쿠팡 파트너스 로그인이 필요합니다.')
   console.log('   브라우저에서 로그인해주세요...')
+  console.log('   로그인 완료 후 Enter를 눌러주세요...')
 
-  try {
-    // 로그인 완료 대기 (대시보드 또는 메인 페이지)
-    await page.waitForURL(/partners\.coupang\.com\/(dashboard|main|home)/i, {
-      timeout: 300000, // 5분 대기
-    })
+  // 사용자가 Enter 누를 때까지 대기
+  await prompt('')
+
+  // 로그인 확인
+  const currentUrl = page.url()
+  console.log(`   현재 URL: ${currentUrl}`)
+
+  // 로그인 페이지가 아니면 성공으로 간주
+  if (!currentUrl.includes('/login') && !currentUrl.includes('/signin')) {
     console.log('✅ 로그인 완료!')
     return true
-  } catch {
-    console.log('❌ 로그인 시간 초과')
-    return false
   }
+
+  console.log('❌ 아직 로그인되지 않았습니다')
+  return false
 }
 
 async function generateAffiliateLink(page: Page, productName: string): Promise<string | null> {
@@ -277,8 +282,9 @@ async function main(): Promise<void> {
     // 쿠팡 파트너스 접속
     await page.goto(COUPANG_PARTNERS_URL, { waitUntil: 'networkidle' })
 
-    // 로그인 확인
-    const isLoggedIn = await page.$('a[href*="logout"], button:has-text("로그아웃"), .user-menu')
+    // 로그인 확인 (여러 셀렉터 시도)
+    await delay(2000)
+    const isLoggedIn = await page.$('a[href*="logout"], button:has-text("로그아웃"), .user-menu, .gnb-user, [class*="user"], [class*="profile"], [class*="mypage"]')
 
     if (!isLoggedIn) {
       const loggedIn = await waitForLogin(page)
@@ -290,6 +296,8 @@ async function main(): Promise<void> {
     } else {
       console.log('✅ 이미 로그인되어 있습니다')
     }
+
+    await delay(1000)
 
     // 링크 생성
     if (isManual) {
