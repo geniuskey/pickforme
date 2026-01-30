@@ -27,3 +27,13 @@ export {
   type CoupangProductInfo,
   type CoupangDeepLink,
 } from './coupang'
+
+export {
+  searchAliProducts,
+  generateAliAffiliateLink,
+  getAliHotProducts,
+  getAliProductsForCategory,
+  ALI_CATEGORIES,
+  type AliProduct,
+  type AliSearchResult,
+} from './aliexpress'

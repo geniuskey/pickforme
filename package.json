@@ -13,6 +13,7 @@
     "scrape:category": "npx tsx scripts/scrape-coupang.ts --category",
     "import:products": "npx tsx scripts/import-products.ts",
     "fetch:naver": "npx tsx scripts/fetch-products-naver.ts",
+    "fetch:ali": "npx tsx scripts/fetch-products-ali.ts",
     "affiliate": "npx tsx scripts/auto-affiliate-links.ts"
   },
   "dependencies": {
